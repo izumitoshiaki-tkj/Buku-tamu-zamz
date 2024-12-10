@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu Zamzz</title>
+    <!-- Bootstrap css -->
+    <link href=https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css rel="stylesheet">
+    <!-- SweetAlert css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content{
+            flex: 1;
+        }
+
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <header class="bg-info text-white text-center py-3 mb-4">
+        <div class="contaniter">
+            <h1 class="display">Buku Tamu Zamzz</h1>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <form id="bukutamuform" class="bg-white p-4 rounded shadow-sm">
+            <div class="form-group">
+                <label for="Nama">Nama</label>
+                <input type="text" class="form-control" id="Nama" name="Nama" required>
+            </div>
+            <div class="form-group">
+                <label for="Alamat">Alamat</label>
+                <input type="text" class="form-control" id="Alamat" name="Alamat" required>
+            </div>
+            <div class="form-group">
+                <label for="Pesan">Pesan</label>
+                <textarea name="Pesan" id="Pesan" class="form-control" required></textarea>
+            </div>
+            <button type="submit" id="submitBtn" class="btn btn-info btn-block">
+                Simpan
+                <span id="loading" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+            </button>
+        </form>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <div class="container">
+            <p>&copy; 2024 <a href="" target="_blank" class="text-info">Zamzz Project</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 35 and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- SweetAlert JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="script.js"></script>
+</body>
+</html>
